@@ -7,9 +7,9 @@ int main()
     int i;
  
     /* Take base and exponent as input*/
-    printf("X: ");
+    printf(" X: ");
     scanf("%d", &base);
-    printf("Y: ");
+    printf(" Y: ");
     scanf("%d", &exponent);
     
     expo = exponent;
@@ -22,7 +22,7 @@ int main()
             power = power * base;
             exponent--;
         }
-        printf("%d ^ %d = %.0f", base, exponent, power);
+        printf(" %d ^ %d = %.0f", base, exponent, power);
     }
     else
     {
@@ -34,7 +34,7 @@ int main()
                 
             }
         }
-        printf("%d ^ %d = %.3f", base, exponent, power);
+        printf(" %d ^ %d = %.3f", base, exponent, power);
     }
     return 0;
 }
