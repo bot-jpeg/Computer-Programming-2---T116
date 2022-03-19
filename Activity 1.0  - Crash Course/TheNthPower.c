@@ -4,7 +4,6 @@
 int main() {
   int base, exponent, expo;
   float power = 1;
-  int i;
 
   /* Take base and exponent as input*/
   printf(" X: ");
