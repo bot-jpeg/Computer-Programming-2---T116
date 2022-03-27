@@ -1,23 +1,16 @@
-//TADAYCA, JAYSON L.
+// TADAYCA, JAYSON L.
+#include <stdio.h>
 
-#include<stdio.h>
-
-int main()
-{
-   
-    float   n1, n2, n3, n4, n5, average;
-    printf("PLEASE INPUT ALL YOUR GRADES \nEnglish: ");
-    scanf("%f", &n1);
-    printf("Mathematics: ");
-    scanf("%f", &n2);
-    printf("Science: ");
-    scanf("%f", &n3);
-    printf("Filipino: ");
-    scanf("%f", &n4);
-    printf("PE: ");
-    scanf("%f", &n5);
-
-    average = (n1+n2+n3+n4+n5) / 5;
-    printf ("Your average is: %.2f\n", average);
+void CalcGrade(int n1, int n2, int n3, int n4, int n5) {
+    int total, average;
+    total = n1 + n2 + n3 + n4 + n5;
+    average = total / 5;
+    printf("\nAverage: %d\n", average);
+}
+int main() {
+    int n1, n2, n3, n4, n5;
+    printf("Enter 5 numbers:\n");
+    scanf("%d%d%d%d%d", &n1, &n2, &n3, &n4, &n5);
+    CalcGrade(n1, n2, n3, n4, n5);
     return 0;
 }
