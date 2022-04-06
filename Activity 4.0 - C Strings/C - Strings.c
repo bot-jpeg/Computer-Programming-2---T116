@@ -5,7 +5,7 @@ int main() {
     char str[50];
     int i, len, vowel, consonant;
 
-    printf("Enter any string: ");
+    printf("Enter a sentence: ");
     fgets(str, sizeof str, stdin);
 
     vowel = 0;
@@ -24,7 +24,7 @@ int main() {
     }
     printf("String Converted: ");
     puts(str);
-    printf("String length %zu ", strlen(str));
+    printf("String length: %u ", len);
     printf("\nVowels: %d", vowel);
     printf("\nConsonants: %d", consonant);
 
